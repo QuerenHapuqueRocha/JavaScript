@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<script>
+		/*
+		//void realizam algum tipo de processamento e fornecem retorno pra quem fez o chamado
+
+		// retorno retornam um parametro que pode ser reutilizado dentro da lógica.
+
+	function calcularAreaTerreno ( largura, comprimento ) {
+		//lógica 
+		var area = largura * comprimento
+
+		// TIPO VOID: document.write('O terreno possui ' + area + ' metros quadrados')
+
+		return area 
+	}
+	var largura = prompt('Digite a largura do terreno em metros')
+	var largura = prompt('Digite o comprimento do terreno em metros')
+
+	var area = calcularAreaTerreno(15, 25)
+
+	document.write('O terreno possui ' + area + ' metros quadrados')
+		*/
+
+		function soma(){
+			var resultado = 0
+			for(var i in arguments){
+				resultado += arguments[i]
+			}
+
+			return resultado
+			/*console.log(arguments) // retorna um array*/
+		}
+
+		console.log(soma(7, 5, 3.2, 0.8, 'Texto'))
+	</script>
+
+</head>
+<body>
+		
+</body>
+</html>

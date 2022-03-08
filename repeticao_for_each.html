@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<script>
+		var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+		console.log(listaFuncionarios)
+		document.write(listaFuncionarios[3])
+
+		listaFuncionarios.forEach(function(valor, indice, array) {
+
+		console.log('índice: ' + indice + ' | valor: ' + valor)
+
+		if(valor == 'Lucas') {
+			array[indice] = 'um novo valor'
+		}
+		
+		})
+		console.log(listaFuncionarios)
+		document.write('<br/>' + listaFuncionarios[3])
+
+	</script>
+
+</head>
+<body>
+		
+</body>
+</html>
